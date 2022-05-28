@@ -4,6 +4,7 @@ const cm = require("../controllers/customers");
 const fileMgmt = require("../shared/fileMgmt");
 
 // http://localhost:3000/customers/export
+// http://localhost:3001/customers/home
 
 router.get("/home", function (req, res, next) {
   const filePath = fileMgmt.getHtmlFilePath("customers-home.html");
