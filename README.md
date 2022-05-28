@@ -21,5 +21,11 @@ Mini CRM project aimed at managing customers, products and orders.
 5. In project, add configuration file: `config/dev.js`
    with database connection details.
 6. Run the app:
+
    - Windows: `set DEBUG=royal-crm:*; & npm start`
    - MacOS/Linux: `$ DEBUG=royal-crm:* npm start`
+
+   check:
+   "scripts": {
+   "start": "nodemon ./bin/www"
+   },
