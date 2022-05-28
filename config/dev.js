@@ -3,4 +3,5 @@ module.exports = {
   DB_USER: "root",
   DB_PASSWORD: "",
   DB_NAME: "royal_crm",
+  JWT_SECRET: "mysecretkey",
 };
