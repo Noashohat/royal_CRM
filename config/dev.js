@@ -8,6 +8,6 @@ module.exports = {
   //mongoDB
   MONGO_DB: "royalCrm",
   MONGO_HOST: "mongodb://localhost:27017",
-  //auth
+  //auth.
   JWT_SECRET: "mysecretkey",
 };
