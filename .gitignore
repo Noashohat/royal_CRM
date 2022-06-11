@@ -5,4 +5,7 @@
 # project
 /node_modules/
 /config/
-/files/
+/exports/
+
+
+*.txt

@@ -11,6 +11,12 @@ router.get("/home", function (req, res, next) {
   res.sendFile(filePath);
 });
 
+// http://localhost:3000/customers/details/2
+router.get("/details/:id", function (req, res, next) {
+  const filePath = fileMgmt.getHtmlFilePath("customer-details.html");
+  res.sendFile(filePath);
+});
+
 router.get("/", cm.customersList);
 // router.get   ('/details', cm.viewCustomerDetails);
 router.get("/export", cm.exportCustomers);

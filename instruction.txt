@@ -1,10 +1,10 @@
 [v] create collections
 [v] create git branch
 [v] install package mongodb
-[] update config
-[] update database.js
-[] update logic in the controller
-[] remove auth 
+[v] update config
+[v] update database.js
+[v] update logic in the controller
+[v] remove auth 
 
-[] add html page for customer details
-[] add a new route
+[v] add html page for customer details
+[v] add a new route to customers router
