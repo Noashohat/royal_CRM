@@ -19,13 +19,14 @@ router.get("/logout", mwAuth, function (req, res, next) {
     .send("Successfully logged out.");
 });
 
-/* GET home page. */
-router.get("/", mwAuth, function (req, res, next) {
+/* home page */
+router.get("/", function (req, res, next) {
   res.send(
     "this is the home page. use /customers/home /products/home or /orders/home."
   );
 });
 
+/* chat */
 router.get("/chat", mwAuth, function (req, res, next) {
   const filePath = fileMgmt.getHtmlFilePath("chat.html");
   res.sendFile(filePath);

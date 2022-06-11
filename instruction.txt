@@ -5,3 +5,6 @@
 [] update database.js
 [] update logic in the controller
 [] remove auth 
+
+[] add html page for customer details
+[] add a new route
