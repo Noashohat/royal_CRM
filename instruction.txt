@@ -1,0 +1,7 @@
+[v] create collections
+[v] create git branch
+[] install package mongodb
+[] update config
+[] update database.js
+[] update logic in the controller
+[] remove auth 

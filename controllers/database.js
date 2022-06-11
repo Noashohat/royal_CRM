@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 const config = require("../config/dev");
-const client = new MongoClient(config.MONGO_DB); //connection url
+const client = new MongoClient(config.MONGO_HOST); //connection url
 let db = undefined;
 // const pool = mysql.createPool({
 //   host: config.DB_HOST,
