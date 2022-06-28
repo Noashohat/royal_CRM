@@ -26,3 +26,18 @@ app.use("/products", auth, productsRouter);
 app.use("/orders", auth, ordersRouter);
 
 module.exports = app;
+
+1;
+2;
+3;
+4;
+5;
+6;
+7;
+
+const http = require("http").Server(app);
+
+app.use(express.json());
+
+const port = 3000;
+http.listen(port, () => console.log(`Listening on port ${port}...`));
