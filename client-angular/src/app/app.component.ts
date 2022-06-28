@@ -11,6 +11,7 @@ export class AppComponent {
   success = true;
   night = true;
   items = ['orange', 'Apple', 'bannana'];
+  labels = ['customers', 'products', 'orders'];
 
   getTitleClass(): string {
     return this.success ? 'text-info' : 'text-danger';
