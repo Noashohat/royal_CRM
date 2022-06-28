@@ -2,12 +2,29 @@
 
 
 
-<h1 class="text-danger">{{title}}</h1>
+<h1 [ngClass]="getTitleClass()">{{title}}</h1>
+<!-- <button (click)="toggleTitleColor()">Toggle Title Color</button>
+<button (click)="addAnotherItem()">Add item</button>
+<div *ngIf="isItNight()">good night</div>
 
-<div><app-button></app-button></div>
-<div><app-button></app-button></div>
-<div><app-button></app-button></div>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+ -->
 
+<div>
+
+<div>
+    <app-button></app-button>
+</div>
+<div class="my-3">
+    <app-button></app-button>
+</div>
+<div>
+    <app-button></app-button>
+</div>
+
+</div>
 
 <!-- <input [type]="inputType"> -->
 
