@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   brandName = 'Royal Crm';
   userName = 'john';
+  today = new Date();
   constructor() {}
 
   ngOnInit(): void {}
