@@ -12,11 +12,8 @@ module.exports = {
       const result = await database.query(sql);
 
       const now = new Date().getTime(); // moment.js
-      const filePath = path.join(
-        __dirname,
-        "../exports",
-        `${filePrefix}-${now}.txt`
-      );
+      const fileName = `${filePrefix}-${now}.txt`;
+      const filePath = path.join(__dirname, "../exports", fileName);
       const stream = fs.createWriteStream(filePath);
 
       stream.on("open", function () {
@@ -25,10 +22,11 @@ module.exports = {
       });
 
       stream.on("finish", function () {
-        res.send(`Success. File at: ${filePath}`);
+        res.json({ name: fileName });
       });
     } catch (err) {
-      throw err;
+      res.status(400).send("Error");
+      // throw err;
     }
   },
 };
